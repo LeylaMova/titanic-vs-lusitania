@@ -51,7 +51,7 @@ This week we will be looking at who survives famous ship sinking (Titanic and Lu
 | body No. | body identification number 
 | ticket No. | ticket identification number 
 | cabin No. | cabin number A, B, C, D, E
-| traveling companions and other notes | traveling companions 
+| traveling | traveling companions 
 | value | corrosponds to fate 1 = survived 0 = deceased
 | sdult minor | age < 18 minor => 18 adult 
 | sex | male, female      
