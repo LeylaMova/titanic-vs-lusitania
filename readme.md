@@ -11,19 +11,37 @@ This week we will be looking at who survives famous ship sinking (Titanic and Lu
 
 | Columns   | Description                                         |
 |:---------:|:----------------------------------------------------|
-| pclass    | socioeconomic status: 1 ~ upper 2 ~ middle 3 ~ lower  |
-| survived  | 1 = survived 0 = deceased                           |
-| sex       | female, male                                      |                                           
-| age       | age in years fractional if less than 1              |
-| sibsp     | number of siblings and spouses on board        |
-| parch     | number of parents and children on board        |
-| ticket    | ticket number   |                                           
-| fare      | ticket fare     |                                           
-| cabin     | number          |                      
-| embarked  | ports C: Cherbourg Q: Queenstown S: Southampton |
-| boat      | lifeboat ID     |                                           
-| body      | body ID number  |                                          
-| home.dest | destination     |                                        
+| PClass    | Ticket Class: 1 = 1st, 2 = 2nd, 3 = 3rd  |
+| Survived  | 1 = Survived 0 = Deceased                           |
+| Sex       | Female or Male                                      |                                           
+| Age       | Age in years              |
+| Sibsp     | # of siblings / spouses aboard the Titanic        |
+| Parch     | # of parents / children aboard the Titanic        |
+| Ticket    | Ticket number   |                                           
+| Fare      | Passenger fare    |                                           
+| Cabin     | Cabin number        |                      
+| Embarked  | Port of Embarkation	C = Cherbourg, Q = Queenstown, S = Southampton |
+| Boat      | lifeboat ID     |                                           
+| Body      | body ID number  |                                          
+| Home.dest | destination     |   
+
+###### Variable Notes
+
+pclass: A proxy for socio-economic status (SES)
+1st = Upper
+2nd = Middle
+3rd = Lower
+
+age: Age is fractional if less than 1. If the age is estimated, is it in the form of xx.5
+
+sibsp: The dataset defines family relations in this way...
+Sibling = brother, sister, stepbrother, stepsister
+Spouse = husband, wife (mistresses and fiancés were ignored)
+
+parch: The dataset defines family relations in this way...
+Parent = mother, father
+Child = daughter, son, stepdaughter, stepson
+Some children travelled only with a nanny, therefore parch=0 for them.
 
 ## Lusitania Data Description
 
@@ -32,41 +50,50 @@ This week we will be looking at who survives famous ship sinking (Titanic and Lu
 
 | Columns   | Description                                         |
 |:---------:|:----------------------------------------------------|
-| family name    | last name |
-| title     | title                          
-| personal name | first name 
-| fate | lost, saved, saved (died from trauma), not on board 
-| age | age in years children under 2 in months and infants 
-| department class | band, deck, engineering, victualling, stowaway, saloon, third, second
-| passenger crew | passenger, crew, stowaway 
-| citizenship | country 
-| position | position of crew member
-| status | marital status 
-| city | city of origin 
-| county | county of origin 
-| state | state of origin 
-| country | country of origin 
-| lifeboat | lifeboat 
-| rescue Vessel | rescue vessel 
-| body No. | body identification number 
-| ticket No. | ticket identification number 
-| cabin No. | cabin number A, B, C, D, E
-| traveling | traveling companions 
-| value | corrosponds to fate 1 = survived 0 = deceased
-| sdult minor | age < 18 minor => 18 adult 
-| sex | male, female      
+| Family Name    | Last Name |
+| Title     | Title                          
+| Personal Name | First Name 
+| Fate | Lost, Saved, Saved (died from trauma), Not on Board 
+| Age | age in years children under 2 in months and infants 
+| Department Class | Passanger: Saloon(1st class), Second, Third Crew: Deck, Victualling, Engineering, Band, Stowaway
+| Passenger Crew | Passenger, Crew, Stowaway 
+| Citizenship | Country 
+| Position | position of Crew Member
+| Status | Marital Status 
+| City | City of Origin 
+| County | County of Origin 
+| State | State of Origin 
+| Country | Country of Origin 
+| Lifeboat | Lifeboat 
+| Rescue Vessel | Rescue Vessel 
+| Body No. | Body Identification Number 
+| Ticket No. | Ticket Identification Number 
+| Cabin No. | Cabin Number A, B, C, D, E
+| Traveling | Traveling Companions 
+| Value | Corrosponds to Fate 1 = Survived 0 = Deceased
+| Adult Minor | Age < 18 Minor => 18 Adult 
+| Sex | Female or Male     
 
+###### Variable Notes
 
+Number of decks	10 – Navigation, Boat (A), Promenade (B), Shelter (C), Saloon (D), Main (E), Lower (F), Orlop, Lower Orlop, Tank Top
 
+Passenger accommodation	Designed:
+552 saloon (first class, 260 rooms)
+460 second cabin (second class, 145 rooms)
+1,186 third class (302 rooms)
+2,298 total 
+In 1915:
+563 saloon (first class)
+464 second cabin (second class)
+1,138 third class
+2,165 total
 
-
-
-
-
-
-
-
-
+Crew accommodation	Designed:
+69 deck
+389 victualling
+369 engineering
+827 total (850 in 1915)
 
 
 
