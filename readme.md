@@ -17,31 +17,31 @@ This week we will be looking at who survives famous ship sinking (Titanic and Lu
 | Age       | Age in years              |
 | Sibsp     | # of siblings / spouses aboard the Titanic        |
 | Parch     | # of parents / children aboard the Titanic        |
-| Ticket    | Ticket number   |                                           
-| Fare      | Passenger fare    |                                           
-| Cabin     | Cabin number        |                      
+| Ticket    | Ticket Number   |                                           
+| Fare      | Passenger Fare    |                                           
+| Cabin     | Cabin Number        |                      
 | Embarked  | Port of Embarkation	C = Cherbourg, Q = Queenstown, S = Southampton |
-| Boat      | lifeboat ID     |                                           
-| Body      | body ID number  |                                          
-| Home.dest | destination     |   
+| Boat      | Lifeboat ID     |                                           
+| Body      | Body ID number  |                                          
+| Home.dest | Destination     |   
 
 ###### Variable Notes
 
 pclass: A proxy for socio-economic status (SES)
-1st = Upper
-2nd = Middle
-3rd = Lower
+* 1st = Upper
+* 2nd = Middle
+* 3rd = Lower
 
 age: Age is fractional if less than 1. If the age is estimated, is it in the form of xx.5
 
-sibsp: The dataset defines family relations in this way...
-Sibling = brother, sister, stepbrother, stepsister
-Spouse = husband, wife (mistresses and fiancés were ignored)
-
-parch: The dataset defines family relations in this way...
-Parent = mother, father
-Child = daughter, son, stepdaughter, stepson
-Some children travelled only with a nanny, therefore parch=0 for them.
+* sibsp: The dataset defines family relations in this way...
+* Sibling = brother, sister, stepbrother, stepsister
+* Spouse = husband, wife (mistresses and fiancés were ignored)
+* 
+* parch: The dataset defines family relations in this way...
+* Parent = mother, father
+* Child = daughter, son, stepdaughter, stepson
+* Some children travelled only with a nanny, therefore parch=0 for them.
 
 ## Lusitania Data Description
 
@@ -79,21 +79,21 @@ Some children travelled only with a nanny, therefore parch=0 for them.
 Number of decks	10 – Navigation, Boat (A), Promenade (B), Shelter (C), Saloon (D), Main (E), Lower (F), Orlop, Lower Orlop, Tank Top
 
 Passenger accommodation	Designed:
-552 saloon (first class, 260 rooms)
-460 second cabin (second class, 145 rooms)
-1,186 third class (302 rooms)
-2,298 total 
-In 1915:
-563 saloon (first class)
-464 second cabin (second class)
-1,138 third class
-2,165 total
+* 552 saloon (first class, 260 rooms)
+* 460 second cabin (second class, 145 rooms)
+* 1,186 third class (302 rooms)
+* 2,298 total 
+* In 1915:
+* 563 saloon (first class)
+* 464 second cabin (second class)
+* 1,138 third class
+* 2,165 total
 
 Crew accommodation	Designed:
-69 deck
-389 victualling
-369 engineering
-827 total (850 in 1915)
+* 69 deck
+* 389 victualling
+* 369 engineering
+* 827 total (850 in 1915)
 
 
 
